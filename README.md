@@ -1,9 +1,20 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<<<<<<< HEAD
-# Infláció - HUF
-=======
+# HUPHAR2024.PK.presentation
+
+<!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/PROJECTNAME)](https://CRAN.R-project.org/package=PROJECTNAME)
+<!-- badges: end -->
+
+The goal of HUPHAR2024_PK_presentation is to investigate the vibrance of
+effects of different compartmental models based on public BE datasets
+using SAEMIX.
+
 # Final notes
 
 I consider this project a dead end.
@@ -43,94 +54,19 @@ Keeping the repo public for transparency, and as a prime example of how
 to take on more than you can chew which would result in a lot of
 non-successses.
 
-# HUPHAR2024.PK.presentation
->>>>>>> devel
-
-<!-- badges: start -->
-
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/PROJECTNAME)](https://CRAN.R-project.org/package=PROJECTNAME)
-<!-- badges: end -->
-
-<<<<<<< HEAD
-A project célja létrehozn egy közérthető adatsort és ehhez tartozó appot
-a KSH CPI adatsora alapján (amit a szerző véleménye szerint elég nehéz
-megtalálni).
-
-## Összefoglalás
-
-A KSH havi adatsorát átdolgoztam, napi bontásra. Az adatsor excelben az
-*inst/backend/calculate_daily_data.xlsx* úton elérhető.
-
-``` r
-library(ggplot2)
-load( here::here("inst","backend","calculate_daily_data.rdata"))
-=======
-The goal of HUPHAR2024_PK_presentation is to investigate the vibrance of
-effects of different compartmental models based on public BE datasets
-using SAEMIX.
-
-As a reminder to myself, at each version bump I nned to update:
-
-- README file (duh)  
-- devtools::build_readme()
-- NEWS file (project name)  
-- DESCRIPTION (depends etc.)  
-- devtools::document() your project after defining new functions under
-  /R  
-- devtools::build_site()
-- then devtools::install()  
-- only then devtools::check()
-
-Notes:
-
-- usethis::create_project() is a great resource  
-- usethis::create_tidy_package() is also great
->>>>>>> devel
-
-dat |>
-  ggplot( aes( x = time, y = cpi)) +
-  theme_bw() +
-  theme( legend.position = "none") +
-  geom_line()  +
-  scale_x_date(date_breaks = "2 years", date_labels = "%Y") +
-  labs( x = "Dátum",
-        y = "CPI (1990 = 100)")
-```
-
-<<<<<<< HEAD
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
-
-## Lokális verzió futtatása
-
-Az appot az ingyenes Rstudio telepítése után lokáisan is futtathatjuk a
-[GitHub](https://github.com/) segítségével.
-=======
 You can ‘install’ the development version of PROJECTNAME from
 [GitHub](https://github.com/) with:
->>>>>>> devel
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("MartynK/HUPHAR2024_PK_presentation")
 ```
-<<<<<<< HEAD
-=======
 
 You’d need to have R and RStudio installed on your computer for the full
 experience. The *.html* outputs are (usually) available in the
 *vignettes* and *docs* subfolders.
 
 ## Further template-like notes
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-#library(HUPHAR2024.PK.presentation)
-## basic example code
-```
 
 What is special about using `README.Rmd` instead of just `README.md`?
 You can include R chunks like so:
@@ -155,4 +91,3 @@ You can also embed plots, for example:
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.
->>>>>>> devel

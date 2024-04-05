@@ -13,9 +13,16 @@ knitr::opts_chunk$set(
 )
 ```
 
-<<<<<<< HEAD
-# Infláció - HUF
-=======
+# HUPHAR2024.PK.presentation
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/PROJECTNAME)](https://CRAN.R-project.org/package=PROJECTNAME)
+<!-- badges: end -->
+
+
+The goal of HUPHAR2024_PK_presentation is to investigate the vibrance of effects of different compartmental models based on public BE datasets using SAEMIX.
+
 # Final notes
 
 I consider this project a dead end.
@@ -41,70 +48,17 @@ I have tried to search for closed solutions for complex PK models, like for spec
 Keeping the repo public for transparency, and as a prime example of how to take on more than you can chew which would result in a lot of non-successses.
 
 
-# HUPHAR2024.PK.presentation
->>>>>>> devel
-
-<!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/PROJECTNAME)](https://CRAN.R-project.org/package=PROJECTNAME)
-<!-- badges: end -->
-
-<<<<<<< HEAD
-A project célja létrehozn egy közérthető adatsort és ehhez tartozó appot a KSH CPI adatsora alapján (amit a szerző véleménye szerint elég nehéz megtalálni).
-
-## Összefoglalás
-=======
-The goal of HUPHAR2024_PK_presentation is to investigate the vibrance of effects of different compartmental models based on public BE datasets using SAEMIX.
-
-
-
-As a reminder to myself, at each version bump I nned to update:
->>>>>>> devel
-
-A KSH havi adatsorát átdolgoztam, napi bontásra. 
-Az adatsor excelben az *inst/backend/calculate_daily_data.xlsx* úton elérhető.
-
-```{r }
-library(ggplot2)
-load( here::here("inst","backend","calculate_daily_data.rdata"))
-
-dat |>
-  ggplot( aes( x = time, y = cpi)) +
-  theme_bw() +
-  theme( legend.position = "none") +
-  geom_line()  +
-  scale_x_date(date_breaks = "2 years", date_labels = "%Y") +
-  labs( x = "Dátum",
-        y = "CPI (1990 = 100)")
-
-<<<<<<< HEAD
-```
-
-## Lokális verzió futtatása
-
-Az appot az ingyenes Rstudio telepítése után lokáisan is futtathatjuk a [GitHub](https://github.com/) segítségével.
-=======
 You can 'install' the development version of PROJECTNAME from [GitHub](https://github.com/) with:
->>>>>>> devel
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("MartynK/HUPHAR2024_PK_presentation")
 ```
-<<<<<<< HEAD
-=======
 
 You'd need to have R and RStudio installed on your computer for the full experience. The *.html* outputs are (usually) available in the *vignettes* and *docs* subfolders.
 
 
 ## Further template-like notes
-
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
-#library(HUPHAR2024.PK.presentation)
-## basic example code
-```
 
 What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
@@ -121,4 +75,3 @@ plot(pressure)
 ```
 
 In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
->>>>>>> devel
